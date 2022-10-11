@@ -1,0 +1,14 @@
+header.header
+    nav.nav.nav--tours
+        a.nav__el(href="/") All tours
+    div.header__logo
+        img(src="/img/logo-white.png", alt="logo")
+    nav.nav.nav--user
+        if loggedUser
+            button.nav__el.logoutbtn Log out
+            a.nav__el(href="/profile") 
+                img.nav__user-img(src="/img/users/user-4.jpg", alt="${loggedUser.username}")
+                span=loggedUser.username 
+        else 
+            a.nav__el(href="/login") Log in
+            button.nav__el.nav__el--cta Sign up

@@ -1,0 +1,20 @@
+doctype html
+html(lang="en")
+    head
+        block head
+            meta(charset="UTF-8")
+            meta(name="viewport", content="width=device-width, initial-scale=1.0")
+            meta(http-equiv="Content-Security-Policy",content="default-src 'self'")
+            link(rel="stylesheet", href="https://fonts.googleapis.com/css?family=Lato:300,300i,700")
+            link(rel="stylesheet", href="/css/style.css")
+            link(rel="shortcut icon", href="/img/favicon.png", type="image/png")
+            script(src="/js/axios.min.js") 
+            title Tours | 
+    body 
+
+        include header
+
+        block content
+
+        include footer
+        script(src="/js/main.js") 
